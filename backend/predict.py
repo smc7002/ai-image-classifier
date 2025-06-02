@@ -5,6 +5,7 @@ from torchvision import transforms, models
 from PIL import Image
 import torch.nn.functional as F
 import torch.nn as nn
+import os
 
 # 1️⃣ Transform
 transform = transforms.Compose([
@@ -18,7 +19,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = models.resnet18(pretrained=False)
 num_classes = 10  # number of my class (fix if needed)
 model.fc = nn.Linear(model.fc.in_features, num_classes)
-model.load_state_dict(torch.load("backend/model/resnet18_finetuned.pt", map_location=device))
+model_path = os.path.join(os.path.dirname(__file__), "model", "resnet18_finetuned.pt")
+model.load_state_dict(torch.load(model_path, map_location=device))
 model.eval()
 model.to(device)
 

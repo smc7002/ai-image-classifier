@@ -5,12 +5,16 @@ from flask_cors import CORS
 import os
 import logging
 from werkzeug.utils import secure_filename
-from .predict import predict_image
+
+# Import prediction function from predict.py
+from predict import predict_image
 
 app = Flask(__name__)
 CORS(app)
 
-UPLOAD_FOLDER = os.path.join(os.getcwd(), 'data', 'uploads')
+# Define upload directory for incoming files
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Base directory (backend/)
+UPLOAD_FOLDER = os.path.join(BASE_DIR, 'uploads')
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 logging.basicConfig(level=logging.INFO)
@@ -40,4 +44,5 @@ def predict():
             os.remove(save_path)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # For local development: Start the Flask server
+    app.run(host='0.0.0.0', port=5000)
