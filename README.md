@@ -21,29 +21,37 @@ The backend is built with **Flask** and **PyTorch**.
 
 ai-image-classifier/
 ├── backend/
-│ ├── app.py # Flask API server
-│ ├── predict.py # Image prediction logic (ResNet18)
-│ ├── train.py # Model fine-tuning script
-│ ├── dataloader.py # Data loader for training
-│ └── model/
-│ └── resnet18_finetuned.pt # Trained model weights
+│   ├── app.py               # Flask API server
+│   ├── predict.py           # Image prediction logic (ResNet18)
+│   ├── train.py             # Model fine-tuning script
+│   ├── dataloader.py        # Data loader for training
+│   ├── model/
+│   │   └── resnet18_finetuned.pt  # Trained model weights
+│
 ├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── UploadArea.jsx # Upload UI with drag & drop
-│ │ │ └── ResultBox.jsx # Result display with chart
-│ │ ├── pages/
-│ │ │ └── Home.jsx # Main page layout
-│ │ ├── App.jsx
-│ │ ├── main.jsx
-│ │ └── index.css
-│ ├── index.html
-│ └── package.json
-└── data/
-  └── clothing-dataset-small-master/
-  ├── train/
-  ├── validation/
-  └── test/
+│   ├── package.json         # Frontend dependencies
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── UploadArea.jsx     # Upload UI (drag & drop + button)
+│   │   │   └── ResultBox.jsx      # Result display with chart
+│   │   ├── pages/
+│   │   │   └── Home.jsx           # Main page layout
+│   │   ├── App.jsx               # Entry point
+│   │   ├── index.css             # Global styles
+│   │   └── main.jsx              # React app root
+│   ├── public/
+│   │   └── index.html            # HTML template
+│
+├── data/
+│   └── clothing-dataset-small-master/
+│       ├── train/
+│       ├── validation/
+│       └── test/
+│
+├── .gitignore
+└── README.md
+
+
 
 ---
 
