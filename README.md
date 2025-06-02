@@ -98,15 +98,27 @@ ai-image-classifier/
 ---
 
 ## ✅ Tech Stack
-
 * 🌐 Backend: Python 3.11, Flask, PyTorch, TorchVision, PIL
 * 🎨 Frontend: React.js, Tailwind CSS, framer-motion
 * 📊 Visualization: Chart.js (via react-chartjs-2)
 * 🌎 Deployment: Render (Recommended)
 
+---
+
+## ✅ Dataset
+This project uses the Clothing Dataset (Small) by Alexey Grigorev.
+Original dataset repository: alexeygrigorev/clothing-dataset-small
+
+* The dataset contains ~2000 images of clothing items across 10 categories (e.g., shirt, pants, skirt, etc.).
+
+* Used for training, validation, and testing of the model.
+
+* License: MIT License (from the original repository).
+
+---
+
 ## 🎯 Project Goal
   Create an intuitive, stylish web app for fashion enthusiasts and developers to explore AI-powered clothing predictions.
-
 
 ## ETC.
   Previously, achieved ~67% accuracy using a baseline CNN model, then transitioned to a fine-tuned ResNet18 model to reach ~99% accuracy.
