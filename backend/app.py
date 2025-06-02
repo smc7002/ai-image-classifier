@@ -7,7 +7,7 @@ import logging
 from werkzeug.utils import secure_filename
 
 # Import prediction function from predict.py
-from predict import predict_image
+from backend.predict import predict_image
 
 app = Flask(__name__)
 CORS(app)
