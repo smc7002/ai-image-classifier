@@ -5,7 +5,7 @@ from flask_cors import CORS
 import os
 import logging
 from werkzeug.utils import secure_filename
-from predict import predict_image
+from .predict import predict_image
 
 app = Flask(__name__)
 CORS(app)
