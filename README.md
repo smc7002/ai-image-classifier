@@ -1,4 +1,4 @@
-# AI Image Classifier Project (Backend)
+# AI Image Classifier Project
 
 ## ✅ Overview
 
