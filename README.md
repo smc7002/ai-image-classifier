@@ -106,14 +106,13 @@ ai-image-classifier/
 ---
 
 ## ✅ Dataset
-This project uses the Clothing Dataset (Small) by Alexey Grigorev.
-Original dataset repository: alexeygrigorev/clothing-dataset-small
+This project uses the **Clothing Dataset (Small)** by Alexey Grigorev.  
+Original dataset repository: [alexeygrigorev/clothing-dataset-small](https://github.com/alexeygrigorev/clothing-dataset-small).
 
-* The dataset contains ~2000 images of clothing items across 10 categories (e.g., shirt, pants, skirt, etc.).
-
-* Used for training, validation, and testing of the model.
-
-* License: MIT License (from the original repository).
+- The dataset contains ~2000 images of clothing items across 10 categories (e.g., shirt, pants, skirt, etc.).
+- Used for training, validation, and testing of the model.
+- **License**: CC0 1.0 Universal (Public Domain Dedication).  
+  This allows the dataset to be used for any purpose, including commercial use, without restrictions.
 
 ---
 
