@@ -8,9 +8,10 @@ from werkzeug.utils import secure_filename
 
 # Import prediction function from predict.py
 from backend.predict import predict_image
+# from predict import predict_image # for local test
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://localhost:5173", "https://ai-image-classifier-3skv.onrender.com"])
 
 # Define upload directory for incoming files
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Base directory (backend/)
