@@ -40,13 +40,7 @@ ai-image-classifier/
 │   │   ├── index.css             # Global styles
 │   │   └── main.jsx              # React app root
 │   ├── public/
-│   │   └── index.html            # HTML template
-│
-├── data/
-│   └── clothing-dataset-small-master/
-│       ├── train/
-│       ├── validation/
-│       └── test/
+│       └── index.html            # HTML template
 │
 ├── .gitignore
 └── README.md
