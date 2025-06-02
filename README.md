@@ -106,3 +106,7 @@ ai-image-classifier/
 
 ## 🎯 Project Goal
   Create an intuitive, stylish web app for fashion enthusiasts and developers to explore AI-powered clothing predictions.
+
+
+## ETC.
+  Previously, achieved ~67% accuracy using a baseline CNN model, then transitioned to a fine-tuned ResNet18 model to reach ~99% accuracy.

@@ -7,6 +7,7 @@ dist/
 build/
 
 # Virtual environments
+venv.txt
 venv/
 .env/
 .venv/
