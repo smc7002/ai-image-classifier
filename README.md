@@ -18,7 +18,7 @@ The backend is built with **Flask** and **PyTorch**.
 ---
 
 ## ✅ Project Structure
-
+```
 ai-image-classifier/
 ├── backend/
 │   ├── app.py               # Flask API server
@@ -51,7 +51,7 @@ ai-image-classifier/
 ├── .gitignore
 └── README.md
 
-
+```
 
 ---
 
