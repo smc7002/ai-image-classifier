@@ -1,9 +1,12 @@
+# render.yaml
+
 services:
   - type: web
     name: ai-image-classifier-backend
     env: docker
     region: oregon
     plan: free
+    dockerfilePath: Dockerfile
     envVars:
       - key: PORT
         value: 5000
