@@ -12,7 +12,15 @@ from backend.predict import predict_image
 
 app = Flask(__name__)
 #CORS(app, origins=["http://localhost:5173", "https://ai-image-classifier-3skv.onrender.com"])
-CORS(app, resources={r"/predict": {"origins": "https://scstylescope.vercel.app/"}})
+#CORS(app, resources={r"/predict": {"origins": "https://scstylescope.vercel.app/"}})
+CORS(app, supports_credentials=True, resources={
+    r"/predict": {
+        "origins": [
+            "http://localhost:5173",
+            "https://scstylescope.vercel.app"
+        ]
+    }
+})
 
 # Define upload directory for incoming files
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Base directory (backend/)

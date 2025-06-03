@@ -27,8 +27,8 @@ const UploadArea = ({ setResult, setLoading }) => {
     formData.append('file', file);
     setLoading(true);
     try {
-      const res = await axios.post('https://ai-image-classifier-3skv.onrender.com/predict', formData);
-      //const res = await axios.post('http://127.0.0.1:5000/predict', formData); // for local test
+      const res = await axios.post('https://ai-image-classifier-backend.onrender.com/predict', formData);
+      //const res = await axios.post('http://localhost:5000/predict', formData); // for local test
       setResult(res.data.result);
     } catch (err) {
       console.error(err);
