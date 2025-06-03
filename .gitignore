@@ -14,6 +14,9 @@ venv/
 .env/
 .venv/
 
+# Photos
+data/
+
 # VSCode
 .vscode/
 
