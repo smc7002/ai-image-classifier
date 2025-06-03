@@ -1,0 +1,7 @@
+.\venv\Scripts\Activate
+
+deactivate
+
+pip install -r requirements.txt
+
+gunicorn app:app

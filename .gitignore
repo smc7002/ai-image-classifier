@@ -1,28 +1,42 @@
-## gitignore
-
 # Python
 __pycache__/
 *.py[cod]
-*.egg
 *.egg-info/
+*.egg
 dist/
 build/
 
 # Virtual environments
-venv.txt
-venv/
-.env/
 .venv/
+env/
+venv/
+env.bak/
+.venv.bak/
 
-# Photos
-data/
+# Flask uploads or cache
+instance/
+uploads/
+*.sqlite3
+*.db
 
-# VSCode
-.vscode/
+# OS
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
-# OS files
-.DS_Store
-Thumbs.db
+# VSCode
+.vscode/
+
+# Docker
+*.pid
+docker-compose.override.yml
+docker-compose.yml
+Dockerfile.dev
+.dockerignore
+
+# Model and data (heavy files)
+backend/model/
+data/
+

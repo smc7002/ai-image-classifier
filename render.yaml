@@ -1,12 +1,7 @@
 services:
   - type: web
     name: ai-image-classifier-backend
-    env: python
+    env: docker
     region: oregon
     plan: free
-    buildCommand: cd backend && pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
-    envVars:
-      - key: PORT
-        value: 10000
     dockerfilePath: backend/Dockerfile
