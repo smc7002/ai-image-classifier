@@ -1,5 +1,7 @@
 # AI Image Classifier Project
 
+Domain: https://scstylescope.vercel.app/
+
 ## ✅ Overview
 
 This project is an AI-powered image classifier for identifying clothing styles using a fine-tuned ResNet18 model. The backend is built with **Flask** and **PyTorch**, and the frontend with **React**.
@@ -130,3 +132,12 @@ Original dataset repository: [alexeygrigorev/clothing-dataset-small](https://git
 ## 🎯 Project Goal
 
 Build an intuitive and attractive web app that makes AI-based image classification easily accessible to anyone interested in fashion tech or ML demos.
+
+
+
+## Screenshots
+
+![alt text](<Screenshot 2025-06-03 162209.png>)
+
+
+![alt text](<Screenshot 2025-06-03 162301.png>)
