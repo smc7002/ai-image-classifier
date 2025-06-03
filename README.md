@@ -132,12 +132,3 @@ Original dataset repository: [alexeygrigorev/clothing-dataset-small](https://git
 ## 🎯 Project Goal
 
 Build an intuitive and attractive web app that makes AI-based image classification easily accessible to anyone interested in fashion tech or ML demos.
-
-
-
-## Screenshots
-
-![alt text](<Screenshot 2025-06-03 162209.png>)
-
-
-![alt text](<Screenshot 2025-06-03 162301.png>)
